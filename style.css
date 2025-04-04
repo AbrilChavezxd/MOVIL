@@ -1,0 +1,82 @@
+@media screen and (max-width: 768px) {
+    .hermano {
+        width: 90%;
+        height: auto;
+        float: none;
+        margin: 10px auto;
+        font-size: 20px;
+    }
+
+    .cuadrado,
+    iframe,
+    .videoder {
+        width: 90% !important;
+        height: auto !important;
+        float: none;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .videoder,
+    .lol {
+        margin-left: 0 !important;
+    }
+
+    .hipertextos {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hipertextos a {
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p, ul, ol {
+        font-size: 16px;
+    }
+
+    .banner {
+        height: 150px;
+        background-size: contain;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+✅ 3. Otros ajustes recomendados
+Reemplaza el uso de <p2> por <p> o crea una clase personalizada (<p class="subtexto">) ya que <p2> no es una etiqueta válida en HTML.
+
+Agrega alt a todas las imágenes para accesibilidad.
+
+Evita el uso de float en diseño móvil. Usa flexbox o grid si puedes.
+
+✅ 4. Mejora el diseño base con box-sizing
+Agrega al principio de tu CSS:
+
+css
+Copiar
+Editar
+* {
+    box-sizing: border-box;
+}
